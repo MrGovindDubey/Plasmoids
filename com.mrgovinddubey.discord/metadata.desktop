@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Discord
+Comment=Plasmoid for accessing Discord in Plasma
+Keywords=discord chat
+Icon=discord
+X-Plasma-API=declarativeappletscript
+Type=Service
+X-Plasma-Provides=com.MrGovindDubey.discord
+X-KDE-ServiceTypes=Plasma/Applet
+X-KDE-PluginInfo-Category=Windows and Tasks
+X-KDE-PluginInfo-Name=com.example.discord
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-Version=1
+X-KDE-PluginInfo-Website=https://github.com/MrGovindDubey/Plasmoids
+KDE-PluginInfo-License=BSD 3.0
+X-Plasma-MainScript=ui/main.qml
+Version=1.0

@@ -1,0 +1,23 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "mrgovinddubey"
+            }
+        ],
+        "Category": "Online Services",
+        "Description": "Discord plasmoid for Plasma.",
+        "Icon": "discord",
+        "Id": "com.mrgovinddubey.discord",
+        "License": "BSD 3.0",
+        "Name": "Discord",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.8",
+        "Website": "https://github.com/MrGovindDubey/Plasmoids"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-StandAloneApp": true
+}
