@@ -18,7 +18,7 @@ Kirigami.FormLayout {
     }
     QQC2.Label {
 		font.pixelSize: 12
-		text:i18n("When checked pressing Enter will send the query to hackergpt.");
+		text:i18n("When checked pressing Enter will send the query to helixAI.");
 	}
 	QQC2.Label {
 		font.pixelSize: 8
@@ -33,12 +33,12 @@ Kirigami.FormLayout {
 
 	QQC2.CheckBox {
         id: allowClipboardAccess
-        text: i18n("Allow hackergpt system clipboard access")
+        text: i18n("Allow helixAI system clipboard access")
     }
     QQC2.Label {
 		font.pixelSize: 8
 		font.italic: true
-		text:i18n("This is enabled by default to allow for quick code/recipe/etc but can be disabled if you are worried about HackerGPT  examining your system clipboard");
+		text:i18n("This is enabled by default to allow for quick code/recipe/etc but can be disabled if you are worried about helixAI  examining your system clipboard");
 	}
 
 }

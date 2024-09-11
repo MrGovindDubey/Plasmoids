@@ -55,7 +55,7 @@ Item {
                                 text: "Home(Github Repo)"
                                 onClicked: {
                                     // Open Github.com in the default system browser
-                                    Qt.openUrlExternally("https://github.com/MrGovindDubey/HackerGPT-Plasmoid")
+                                    Qt.openUrlExternally("https://github.com/MrGovindDubey/Plasmoids/tree/Master/com.mrgovinddubey.helixAI")
                                 }
                             }
 
@@ -72,7 +72,7 @@ Item {
                         PlasmaComponents.ToolButton {
                             text: i18n("Debug")
                             checkable: true
-                            checked: hackergptWebViewInspector && hackergptWebViewInspector.enabled
+                            checked: helixAIWebViewInspector && helixAIWebViewInspector.enabled
                             visible: Qt.application.arguments[0] == "plasmoidviewer" || plasmoid.configuration.debugConsole
                             enabled: visible
                             icon.name: "format-text-code"
@@ -81,8 +81,8 @@ Item {
                             PlasmaComponents.ToolTip.delay: Kirigami.Units.toolTipDelay
                             PlasmaComponents.ToolTip.visible: hovered
                             onToggled: {
-                                hackergptWebViewInspector.visible = !hackergptWebViewInspector.visible;
-                                hackergptWebViewInspector.enabled = visible || hackergptWebViewInspector.visible
+                                helixAIWebViewInspector.visible = !helixAIWebViewInspector.visible;
+                                helixAIWebViewInspector.enabled = visible || helixAIWebViewInspector.visible
                             }
                         }
 
@@ -94,7 +94,7 @@ Item {
                             PlasmaComponents.ToolTip.text: text
                             PlasmaComponents.ToolTip.delay: Kirigami.Units.toolTipDelay
                             PlasmaComponents.ToolTip.visible: hovered
-                            onClicked: hackergptWebView.reload();
+                            onClicked: helixAIWebView.reload();
                         }
 
                         PlasmaComponents.ToolButton {
@@ -130,7 +130,7 @@ Item {
                             enabled: proLinkContainer.visible
                             icon.name: "go-next"
                             onClicked:  {
-                                hackergptWebView.url = proLinkField.text;
+                                helixAIWebView.url = proLinkField.text;
                                 proLinkContainer.visible= false;
                             }
                         }
@@ -151,13 +151,13 @@ Item {
             Layout.fillHeight: true
             Layout.fillWidth: true
 
-            id: hackergptWebView
+            id: helixAIWebView
             focus: true
             url: "https://chat.hackerai.co"
 
             profile: WebEngineProfile {
-                id: hackergptProfile
-                storageName: "hackergpt"
+                id: helixAIProfile
+                storageName: "helixAI"
                 offTheRecord: false
                 httpCacheType: WebEngineProfile.DiskHttpCache
                 persistentCookiesPolicy: WebEngineProfile.ForcePersistentCookies
@@ -179,7 +179,7 @@ Item {
             }
         }
         WebEngineView {
-            id: hackergptWebViewInspector
+            id: helixAIWebViewInspector
             enabled: false
             visible: false
             z:100
@@ -187,7 +187,7 @@ Item {
 
             Layout.fillWidth:true
             Layout.alignment:Qt.AlignBottom
-            inspectedView:enabled ? hackergptWebView : null
+            inspectedView:enabled ? helixAIWebView : null
         }
     }
 }
