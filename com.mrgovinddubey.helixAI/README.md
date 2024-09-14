@@ -24,21 +24,29 @@ Helix AI is a powerful and customizable plasmoid for KDE Plasma that provides se
 - **Responsive Layout**: Adapts to different sizes and orientations.
 - **Theme Integration**: Seamlessly matches your KDE Plasma theme.
 
+
+
 ## Installation
+
+KDE STORE :  https://store.kde.org/p/2203672
+
+
+
+### Manual installation :
 
 1. Clone the repository:
    ```
-   git clone https://github.com/YourUsername/Plasmoids.git
+   git clone https://github.com/MrGovindDubey/Plasmoids
    ```
 
 2. Navigate to the Helix AI directory:
    ```
-   cd Plasmoids/com.yourname.helixAI
+   cd Plasmoids
    ```
 
 3. Install the plasmoid:
    ```
-   plasmapkg2 -i .
+   mv /com.mrgovinddubey.helixAI ~/.local/share/plasma/plasmoid/
    ```
 
 ## Usage
@@ -78,5 +86,10 @@ If you encounter any issues or have questions, please file an issue on our [GitH
 This project is licensed under the BSD 3-Clause License. See the [LICENSE](LICENSE) file for details.
 
 ---
+## Acknowledgements
 
-Developed by [Your Name](https://github.com/YourUsername)
+"Contributions and feedback are welcome! Feel free to fork the repository, make improvements, and submit pull requests to enhance the Helix AI Plasmoid."
+
+"Enjoying the Multiple AI? Show your support by starring 🌟 the repository if you find it useful!"
+
+Developed by [Mr. Govind Dubey](https://github.com/MrGovindDubey)
