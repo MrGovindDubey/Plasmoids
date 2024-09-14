@@ -15,7 +15,7 @@ Helix AI is a powerful and customizable plasmoid for KDE Plasma that provides se
 
 ## Features
 
-- **Multiple AI Interfaces**: Quick access to various AI chat interfaces (e.g., DuckDuckGo AI, Helix AI).
+- **Multiple AI Interfaces**: Quick access to various AI chat interfaces (DuckDuckGo AI).
 - **Customizable Appearance**: Adapt the plasmoid to your preferences and desktop theme.
 - **Debug Console**: Advanced troubleshooting capabilities for developers and power users.
 - **Privacy Controls**: Configurable clipboard access for enhanced security.
