@@ -59,8 +59,8 @@ Item {
   PlasmaComponents.ToolButton {
     text: "Home(Github Repo)"
     onClicked: {
-        // Open Github.com in a web browser
-        googleWebView.url = "https://github.com/MrGovindDubey/Plasmoids/tree/Master/com.mrgovinddubey.helixAI"
+        // Open Github.com in an external web browser
+        Qt.openUrlExternally("https://github.com/MrGovindDubey/Plasmoids/tree/Master/com.mrgovinddubey.helixAI")
     }
 }
 
@@ -99,7 +99,19 @@ Item {
 							PlasmaComponents.ToolTip.text: text
 							PlasmaComponents.ToolTip.delay: Kirigami.Units.toolTipDelay
 							PlasmaComponents.ToolTip.visible: hovered
-							onClicked: helixAIWebView.reload();
+							MouseArea {
+								anchors.fill: parent
+								acceptedButtons: Qt.LeftButton | Qt.RightButton
+								onClicked: {
+									if (mouse.button === Qt.LeftButton) {
+										// Left-click: Load DuckDuckGo AI chat
+										helixAIWebView.url = "https://duckduckgo.com/aichat"
+									} else if (mouse.button === Qt.RightButton) {
+										// Right-click: Refresh current page
+										helixAIWebView.reload()
+									}
+								}
+							}
 						}
 
 						PlasmaComponents.ToolButton {
@@ -199,5 +211,3 @@ Item {
 			}
 	}
 }
-
-
