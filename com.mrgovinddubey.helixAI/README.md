@@ -77,7 +77,7 @@ We welcome contributions to the Helix AI Plasmoid! Here's how you can contribute
 
 Please ensure your code adheres to the existing style and passes all tests.
 
-## Support
+## Bugs and Feature Requests
 
 If you encounter any issues or have questions, please file an issue on our [GitHub issue tracker](https://github.com/YourUsername/Plasmoids/issues).
 
